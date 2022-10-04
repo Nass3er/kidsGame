@@ -1,0 +1,16 @@
+
+رابط الصفحة الرئيسية 
+  
+http://localhost/kidsGame/views/
+OR
+http://localhost:85/kidsGame/views/
+
+
+
+username database : root  or nasser 
+password database : 6517 or set empty
+
+
+YOU CAN CHANGE THIS WHENE IMPORT  DATABASE IN YOUR DEVICE
+
+THANKS

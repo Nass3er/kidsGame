@@ -1,0 +1,194 @@
+
+ 
+.navbar{
+    background-color:rgb(17, 230, 212);
+    color: white;
+}
+
+.footer{
+    background-color:rgb(17, 230, 212);
+
+}
+.footer .copyright > span{
+    color: var(--green-color);
+
+}
+.footer .copyright div span{
+    color: var(--yellow-color);
+}
+.footer .contact ul svg{
+    width: 20px;
+    height: 20px;
+}
+.footer .contact ul li a{
+    color: white;
+}
+
+
+/* login */
+.box1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.bord{
+    border: 3px solid rgb(17, 230, 212);
+   border-radius: 10px;
+   border-top-right-radius: 52px;
+   border-bottom-left-radius: 52px;
+   box-shadow: 9px -12px 4px 2px rgb(34 218 255) ;
+}
+.info h5{
+    color: rgb(17, 230, 212);
+}
+.explain h5{
+    color: rgb(17, 230, 212);
+}
+.landing{
+     min-height: calc(75vh - 72px);
+}
+
+.main-btn{
+    background-color: rgb(17, 230, 212); 
+    color:  white;
+    padding: 0.5rem 1rem;
+     border: 2px solid rgb(17, 230, 212);
+}
+.main-btn-e{
+     border: 1px solid white;
+}
+.main-btn:hover{
+    color:   black;
+   background-color:white;
+}
+
+.sidbar{
+     background-color:rgba(17, 230, 212, 0.568); 
+}
+.sidbar .navbar-nav .nav-item .nav-link{
+    color: white;
+    font-size: 20px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.sidbar .navbar-nav .nav-item .nav-link:hover,
+.sidbar .navbar-nav .nav-item .nav-link:active{
+    border-bottom: 2px solid black;
+    color: black;
+    transform: translateX(5%);
+    transition: 0.5s;
+}
+.cat ul li{
+    padding-bottom: 5px;
+    margin-left: 5px;
+}
+.cat ul li:hover,
+.cat ul li:active{
+  color: rgb(17, 230, 212) ;
+  transition: 0.5s;
+   transform: translateX(5%);
+   list-style-type: square;
+   cursor: pointer;
+   font-weight: bold;
+   
+}
+.cat .btn-filter{
+    background-color:rgb(17, 230, 212);
+    color:white;
+    font-weight: bold;
+}
+.cat .btn-filter:hover,.cat .btn-filter:active{
+    background-color: white;
+    color: black;
+}
+
+.separate{
+  margin-top: 20px;
+  width: 100%;
+  border: 1px solid black;
+  margin-right: 0px;
+  padding-right: 0px;
+}
+
+.selectpriceinput{
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    
+
+}
+.selectpriceinput input{
+    width: 60px;
+    height: 40px;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: 0.5px solid gray;
+}
+.btn-setprice{
+    background-color:rgb(17, 230, 212);
+    color:white;
+    font-weight: bold; 
+    align-items: center;
+}
+.btn-setprice:hover,.btn-setprice:active{
+background-color: white;
+color: black;
+}
+.add{
+    border: 1px solid black;
+    font-weight: bold;
+}
+.add:hover,.add:active{
+    background-color: rgb(17, 230, 212);
+    color: white;
+}
+
+.btn-increase button{
+ background-color: rgb(204, 196, 196);
+ font-weight: bold;
+ 
+ height: 40px;
+}
+.btn-increase button:nth-child(2){
+   height:43px ;
+   padding-top: 16px;
+   border: 1px solid white ;
+   margin: 1px;
+}
+.btn-increase2 button {
+   padding: 0px;
+  margin-left: -20;
+  background-color: rgb(211, 207, 207);
+ }
+ .btn-increase2 button:nth-child(2){
+ 
+    
+    border: 1px solid white ;
+    margin: 1px;
+ }
+ .cancel-card:hover{
+     cursor: pointer;
+     color: red;
+ }
+
+ .createproduct .form-group label{
+    color: rgb(17, 230, 212);
+    font-weight: bold;
+ }
+ .noti-acount{
+    position: absolute;
+    width: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 5px;
+    left: 127px;
+    height: 18px;
+    color: white;
+    background-color: red;
+    border-radius: 30px;
+  }
