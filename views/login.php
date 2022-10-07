@@ -17,19 +17,23 @@
                 <div class="box1">
                     <div class="bord  p-5 ">
                     <h4 class="header text-center mt-4 mb-4">Login</h4>
-                    <form class="" action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
+                    <form class="form" action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
                         <div class="form-group mb-3  ">
                             <label for="userEmail">Email:</label>
                             <input type="email" class="form-control" placeholder="Enter email" name="userEmail" id="" required>
                         </div>
                         <div class="form-group mb-3 ">
+                           
+                            <div class="d-flex justify-content-between align-items-center">
                             <label for="userPassword">password:</label>
-                            <input type="password" class="form-control" placeholder="Enter password" name="userPassword" id="" required>
+                              <i class="fa-solid fa-eye-slash" id="togglePass" style="color:rgb(17, 230, 212);" onclick="myfunc()"></i>
+                            </div>
+                            <input type="password" class="form-control" placeholder="Enter password" name="userPassword" id="passw" required>
                         </div>
                         <a href="#"> forget password?</a>
 
                         <div class="form-group text-center">
-                             <button  class="btn btn-primary rounded-pill ps-4 pe-4 m-3" type="submit">login</button>
+                             <button class="btn btn-primary rounded-pill ps-4 pe-4 m-3" id="log" type="submit">login</button>
                         </div>
                     </form>
                    <?php
@@ -64,6 +68,7 @@
             
          
     </div>
+      
     <?php include_once("footer.php"); ?>
 </body>
 </html>

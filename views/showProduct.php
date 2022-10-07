@@ -10,6 +10,15 @@ $statement= $pdo->prepare("SELECT * FROM productsr WHERE id = :id");
 $statement->bindValue(':id',$id);
 $statement->execute();
 $product =$statement->fetch(PDO::FETCH_ASSOC);
+
+function funD($url){
+ $filnamae=basename($url);
+ if(file_put_contents($filnamae,file_get_contents($url))){
+     echo "file download successfully..";
+ } else{
+     echo "download not successfully";
+ }
+}
 ?>
 <?php include_once("header.php"); ?>
     <div class="showproduct mt-5 mb-5">
@@ -18,6 +27,7 @@ $product =$statement->fetch(PDO::FETCH_ASSOC);
                 <div class="col-md-6 col-lg-6">
                     <div class="container">
                         <img class="img-fluid" src="<?php echo $product['photo'] ?>" width="300px" height="250px" alt="" style="border-radius: 25px;">
+                         <button onclick=<?php echo funD($product['photo']) ?>>download</button>
                     </div>
                  
                 </div>

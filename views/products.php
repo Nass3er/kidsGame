@@ -54,8 +54,10 @@ $products=$statement->fetchAll(PDO::FETCH_ASSOC);
                        <div class="card-body border-top pb-0 ps-0 pe-0">
                            <div class="d-flex">
                               <?php if(isset($_SESSION['userEmail'])) : ?>
+                                <?php if(Users::isAdmin($pdo)) :?>
                                <a href="../tables/deleteProduct.php ?id=<?php echo $product['id'] ?>"><i class="fas fa-trash-alt text-danger me-1"></i></a>
                                <a href="editProduct.php ?id=<?php echo $product['id'] ?>"><i class="fas fa-edit text-primary me-1"></i></a>
+                              <?php endif ;?>
                               <?php endif ;?>
                            <h5 class="card-title"><?php echo $product['title'] ?></h5>
                            </div>

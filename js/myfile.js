@@ -35,6 +35,37 @@ function minusfunc(price){
         document.getElementById("quant").innerHTML-=1;
         document.getElementById("total").innerHTML-=price;
     }
-  
-   
+
 }
+
+//  let togglePass=document.getElementById("togglePass");
+//  let passw=document.getElementById("passw");
+
+//  togglePass.onclick=function(){
+     
+//        let type=passw.type=="password" ? "text" : "password";
+//      passw.setAttribute("type","text");
+
+//      // toggle the icon 
+//      this.classList.toggle("fa-eye");
+//  }
+// //  prevent form submit 
+// const form= document.querySelector(".form");
+// form.addEventListener("submit",function(e){
+//     e.preventDefault();
+// });
+
+function myfunc(){
+    var y=document.getElementById("togglePass");
+    var x=document.getElementById("passw");
+    if(x.type==="password"){
+        x.type="text";
+        y.classList.remove("fa-eye-slash");
+        y.classList.add("fa-eye");
+    }else{
+        x.type="password";
+        y.classList.remove("fa-eye");
+        y.classList.add("fa-eye-slash");
+    }
+}
+

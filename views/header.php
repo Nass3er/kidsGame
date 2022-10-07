@@ -1,5 +1,7 @@
 <?php
-session_start();
+  
+require_once("../DB/database.php");
+require_once("../tables/Users.php");
 $items_in_cart=0;
  if (isset($_SESSION['cart'])) {
    $items_in_cart = is_array($_SESSION['cart']) ? count($_SESSION['cart']) : 0 ;
@@ -50,6 +52,9 @@ $items_in_cart=0;
                           <a class="nav-link active" aria-current="page" href="products.php">products</a>
                         </li>
                         <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="otherProduct.php">products</a>
+                        </li>
+                        <li class="nav-item">
                           <a class="nav-link active" aria-current="page" href="createProduct.php">createProduct</a>
                         </li>
                         <li class="nav-item">
@@ -61,6 +66,13 @@ $items_in_cart=0;
                         <li class="nav-item">
                           <a class="nav-link active" aria-current="page" href="showpresentation.php">show presentation</a>
                         </li>
+                       
+                        <?php if(Users::isAdmin($pdo)) :?>
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="insertUser.php">create user</a>
+                        </li>
+                        <?php endif; ?>
+                      
                         <?php
                         if (isset($_SESSION['userEmail']) and $_SESSION['userEmail'] !=null) {
                           echo'<li class="nav-item">
